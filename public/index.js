@@ -8,3 +8,18 @@ function initMap() {
 }
 
 window.initMap;
+
+var url = "http://localhost:3001/google-api/map";
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    try {
+      console.log(this);
+    } catch (err) {
+      console.log(err.message);
+      return;
+    }
+  }
+};
+xmlhttp.open("GET", url);
+xmlhttp.send();

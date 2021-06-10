@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },
   "scripts": {
@@ -9,7 +8,11 @@
   "name": "simplemap",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "concurrently": "^6.2.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
