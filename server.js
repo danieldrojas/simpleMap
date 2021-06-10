@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000;
 
 // }
 
-// app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("/", (req, res) => {
   console.log("this is request: ", req.url);
@@ -29,7 +29,6 @@ app.get("/", (req, res) => {
   // const src = `https://maps.googleapis.com/maps/api/js?key=${process.env.API_KEY_MAPS_GOOGLE}&libraries=geometry,places,localContext&callback=initMap`;
   // console.log(src);
   res.send("Hello World");
-  l;
 });
 
 app.listen(port, () => {
